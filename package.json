@@ -1,0 +1,11 @@
+{
+  "name": "quicksumm-text-summarizer",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An AI-powered text summarizer built with a Generative AI API and deployed as a static site with a Vercel serverless function.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "license": "MIT"
+}

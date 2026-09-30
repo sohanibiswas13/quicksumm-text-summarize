@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>QuickSumm — AI Text Summarizer</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>QuickSumm</h1>
+      <p class="tagline">Paste any long text and get an instant AI-generated summary.</p>
+    </header>
+
+    <main class="card">
+      <label for="inputText">Your text</label>
+      <textarea id="inputText" placeholder="Paste an article, notes, or any long text here..."></textarea>
+      <div class="charcount"><span id="charCount">0</span> characters</div>
+
+      <div class="controls">
+        <div class="control-group">
+          <label for="length">Summary length</label>
+          <select id="length">
+            <option value="short">Short (2-3 sentences)</option>
+            <option value="medium" selected>Medium (1 paragraph)</option>
+            <option value="detailed">Detailed (multiple paragraphs)</option>
+          </select>
+        </div>
+        <button id="summarizeBtn">Summarize</button>
+      </div>
+
+      <div id="errorBox" class="error hidden"></div>
+
+      <section id="resultBox" class="result hidden">
+        <h2>Summary</h2>
+        <div id="summaryOutput"></div>
+        <button id="copyBtn" class="secondary">Copy summary</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built with a Generative AI API · <a href="https://github.com/" target="_blank" rel="noopener">View on GitHub</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
